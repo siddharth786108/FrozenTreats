@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %} Chocolate {% endblock title %}
+{% block body %}
+ <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+ <div class="col">
+          <div class="card shadow-sm my-3 px-2">
+            <img src="/static/6.jfif" height="300" width="300" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">Vanilla+Chocolate RS.49</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/order" class="btn btn-danger active" aria-current="page">Order</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm my-3 px-2">
+            <img src="/static/7.jfif" height="300" width="300" class="d-block w-100" alt="...">
+
+            <div class="card-body">
+              <p class="card-text">Chocolate Rs.36</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/order" class="btn btn-warning active" aria-current="page">Order</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ </div>
+
+
+{% endblock body %}

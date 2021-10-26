@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block title %} Payment {% endblock title %}
+{% block body %}
+<body background="/static/11.jfif" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+          <hr class="my-4">
+
+          <h4 class="mb-3 px-1">Payment</h4>
+
+          <div class="my-3">
+              <div class="form-check px-4">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+          </div>
+
+          <div class="row gy-3 ">
+            <div class="col-md-6 px-4">
+              <label for="cc-name" class="form-label">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+
+            <div class="col-md-5 px-5">
+              <label for="cc-number" class="form-label">Debit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+
+            <div class="col-md-3 px-4">
+              <label for="cc-expiration" class="form-label">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+
+            <div class="col-md-3 px-5">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+            <div class="px-4">
+          <a href="/payment" class="btn btn-warning active" aria-current="page">Payment</a>
+            </div>
+</body>
+
+
+{% endblock body %}
